@@ -1,4 +1,4 @@
-package lab.number.roundAndTruncate;
+package cef.numberUtil;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -7,16 +7,14 @@ import java.util.List;
 import org.junit.Assert;
 import org.junit.Test;
 
-import lab.number.NumeroUtil;
-
 public class NumeroUtilTest {
 
 	/**
-	 * Massa de testes para Arredondamento
+	 * Massa de testes para arredondamento
 	 */
 	public static List<MassaTeste> getMassaArredondamento() {
 
-		List<MassaTeste> massa = new ArrayList<MassaTeste>();
+		List<MassaTeste> massa = new ArrayList<>();
 
 		// Positivos com precisao de 29-10 (Inteiros-Decimais)
 		String numeroConverter = "99999999999999999999999999999.9876543210";
@@ -74,7 +72,7 @@ public class NumeroUtilTest {
 	}
 
 	/**
-	 * Massa de testes para Truncagem
+	 * Massa de testes para truncagem
 	 */
 	public static List<MassaTeste> getMassaTruncagem() {
 
@@ -147,6 +145,16 @@ public class NumeroUtilTest {
 	}
 
 	@Test
+	public void testeArredondamentoComoString() {
+
+		for (MassaTeste massa : getMassaArredondamento()) {
+			BigDecimal numero = new BigDecimal(massa.getNumero());
+			int precisao = massa.getPrecisao();
+			Assert.assertEquals(massa.getEsperadoArredondadoComoString(), NumeroUtil.arredondarComoString(numero, precisao));
+		}
+	}
+
+	@Test
 	public void testeTruncagem() {
 
 		for (MassaTeste massa : getMassaTruncagem()) {
@@ -155,6 +163,16 @@ public class NumeroUtilTest {
 			BigDecimal esperado = new BigDecimal(massa.getEsperado());
 			int precisao = massa.getPrecisao();
 			Assert.assertEquals(esperado, NumeroUtil.truncar(numero, precisao));
+		}
+	}
+
+	@Test
+	public void testeTruncagemComoString() {
+
+		for (MassaTeste massa : getMassaTruncagem()) {
+			BigDecimal numero = new BigDecimal(massa.getNumero());
+			int precisao = massa.getPrecisao();
+			Assert.assertEquals(massa.getEsperadoTruncadoComoString(), NumeroUtil.truncarComoString(numero, precisao));
 		}
 	}
 

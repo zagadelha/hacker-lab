@@ -1,4 +1,4 @@
-package lab.number;
+package cef.numberUtil;
 
 import java.math.BigDecimal;
 import java.text.DecimalFormat;
