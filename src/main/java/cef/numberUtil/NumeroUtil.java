@@ -12,6 +12,12 @@ public class NumeroUtil {
 	private static final NumberFormat FORMATO = NumberFormat.getNumberInstance(BR);
 
 	/**
+	 * Construtor privado criado para essa classe não ser instanciada
+	 */
+	private NumeroUtil() {
+	}
+
+	/**
 	 * Arredonda um numero BigDecimal recebido com a precisao decimal informada.
 	 * 
 	 * @param numero   Numero no formato BigDecimal a ser arredondado
@@ -35,8 +41,8 @@ public class NumeroUtil {
 
 		DecimalFormat df = (DecimalFormat) FORMATO;
 		df.applyPattern(obterPadrao(precisao));
-		numero.setScale(precisao, RoundingMode.HALF_UP);
-		return df.format(numero);
+		BigDecimal numeroArredondado = numero.setScale(precisao, RoundingMode.HALF_UP);
+		return df.format(numeroArredondado);
 	}
 
 	private static String obterPadrao(int precisao) {
@@ -76,8 +82,8 @@ public class NumeroUtil {
 	 */
 	public static String truncarComoString(BigDecimal numero, int precisao) {
 
-		numero.setScale(precisao, RoundingMode.DOWN);
-		return FORMATO.format(numero);
+		BigDecimal numeroTruncado = numero.setScale(precisao, RoundingMode.DOWN);
+		return FORMATO.format(numeroTruncado);
 	}
 
 }

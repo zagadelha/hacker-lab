@@ -47,8 +47,7 @@ public class MassaTeste {
 	public String getEsperadoTruncadoComoString() {
 
 		BigDecimal newNumber = new BigDecimal(this.numero);
-		newNumber.setScale(precisao, RoundingMode.DOWN);
-		return FORMATO.format(newNumber);
+		return FORMATO.format(newNumber.setScale(this.precisao, RoundingMode.DOWN));
 	}
 
 	private static String obterPadrao(int precisao) {

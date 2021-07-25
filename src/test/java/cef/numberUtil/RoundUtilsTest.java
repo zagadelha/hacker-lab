@@ -151,31 +151,35 @@ public class RoundUtilsTest {
 //		System.out.println("Esperado: 9.01 - Resultado: " + NumeroUtil.arredondar(new BigDecimal("9.1"), 2));
 
 		// Cenario 4
-		System.out.println("Retorno BigDecimal");
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 1));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 2));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 3));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 4));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 5));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 6));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 7));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 8));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 9));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 10));
-		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 11));
+//		System.out.println("Retorno BigDecimal");
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 1));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 2));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 3));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 4));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 5));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 6));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 7));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 8));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 9));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 10));
+//		System.out.println(NumeroUtil.arredondar(new BigDecimal("123456789.0027579315"), 11));
+//
+//		System.out.println("\nRetorno String");
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 1));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 2));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 3));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 4));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 5));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 6));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 7));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 8));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 9));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 10));
+//		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 11));
 
-		System.out.println("\nRetorno String");
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 1));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 2));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 3));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 4));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 5));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 6));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 7));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 8));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 9));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 10));
-		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("123456789.0027579315"), 11));
+		System.out.println(">>> 31239");
+		System.out.println(NumeroUtil.arredondar(new BigDecimal("31239"), 2));
+		System.out.println(NumeroUtil.arredondarComoString(new BigDecimal("31239"), 2));
 
 	}
 
