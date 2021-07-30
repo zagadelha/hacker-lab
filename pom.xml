@@ -3,10 +3,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>hacker-test</groupId>
-	<artifactId>hacker-test</artifactId>
+	<groupId>hacker-lab</groupId>
+	<artifactId>hacker-lab</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hacker-test</name>
+	<name>hacker-lab</name>
 	<description>Project to solve hacker problems </description>
 
 	<properties>
