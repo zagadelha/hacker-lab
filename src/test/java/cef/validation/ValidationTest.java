@@ -17,7 +17,7 @@ public class ValidationTest {
 	 */
 	@Test
 	public void personIsMajor() {
-		Person p = new Person(1, "John", 21);
+		Person p = new Person(1, "Billy", 21);
 		Boolean status = v1.isValid(p);
 		Assert.assertEquals(Boolean.TRUE, status);
 	}
