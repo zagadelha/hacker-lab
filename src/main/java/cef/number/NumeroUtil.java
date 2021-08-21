@@ -1,4 +1,4 @@
-package cef.numberUtil;
+package cef.number;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;

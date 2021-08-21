@@ -2,6 +2,8 @@ package cef.numberUtil;
 
 import java.math.BigDecimal;
 
+import cef.number.NumeroUtil;
+
 public class RoundUtilsTest {
 
 	// Arredondamento de numeros positivos com precisao de 1-10 OK
