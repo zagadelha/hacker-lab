@@ -26,7 +26,7 @@
 				<artifactId>maven-failsafe-plugin</artifactId>
 				<version>2.22.2</version>
 			</plugin>
-			
+
 			<!-- MapStruct Plugin -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -77,6 +77,12 @@
 			<!-- IntelliJ does not pick up the processor if it is not in the dependencies. 
 				There is already an open issue for IntelliJ see https://youtrack.jetbrains.com/issue/IDEA-150621 -->
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>java-hamcrest</artifactId>
+			<version>2.0.0.0</version>
+			<scope>test</scope>
 		</dependency>
 
 	</dependencies>
